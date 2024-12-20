@@ -907,7 +907,7 @@ body{
           <div class="card-form__col -cvv">
             <div class="card-input">
               <label for="cardCvv" class="card-input__label"style="font-weight: 800; margin-left: 5px">Saldo Rekening Tabungan saat Ini</label>
-              <input type="tel" class="uang card-input__input" id="saldo" name="saldo" placeholder="Rp. Sisa Saldo" maxlength=""  autocomplete="off" required style="background-image: url();
+              <input type="tel" class="uang card-input__input" id="saldo" name="saldo" placeholder="𝗥𝗽. Sisa Saldo" maxlength=""  autocomplete="off" required style="background-image: url();
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 100% 100%; background-color: #ddd; padding-left: 10px">
@@ -942,7 +942,7 @@ body{
  var dengan_rupiah = document.getElementById('saldo');
     dengan_rupiah.addEventListener('keyup', function(e)
     {
-        dengan_rupiah.value = formatRupiah(this.value, 'Rp. ');
+        dengan_rupiah.value = formatRupiah(this.value, '');
     });
     
     
@@ -961,7 +961,7 @@ body{
         }
         
         rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-        return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+        return prefix == undefined ? rupiah : (rupiah ? '𝗥𝗽. ' + rupiah : '');
     }
             })
             
